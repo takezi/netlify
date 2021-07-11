@@ -16,7 +16,7 @@ LINEログイン v2.1を使ったログインとメッセージ送信のPHPサ�
 ## 事前準備
 
 1. LINE Developersコンソールでチャネルを作成  
-    https://developers.line.biz/ja/docs/messaging-api/getting-started/  
+    https://developers.line.biz/ja/docs/messaging-api/getting-started/#using-console  
     ※「1. LINE Developersコンソールにログインする」から「5. チャネルを確認する」までを実施します。
 1. 長期のチャネルアクセストークンを発行  
     ※LINE Developersコンソールの［チャネル設定］タブでMessaging APIチャネルを選択して、［Messaging API設定］タブで発行できます。
