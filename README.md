@@ -89,7 +89,7 @@ ngrokのhttpsのURLに「/line-login/callback.php」を加えたものになり�
 ngrokのURLは起動する度に変化します。
 起動する度に、`.htaccess` と LINE DevelopersコンソールでコールバックURLを再設定する必要があります。  
 ※本番環境ではURLが変化しないため、一度設定すると変える必要はありません。
-- 「認可サーバーが無効なstateパラメータを返却しました。」と表示される
+- 「認可サーバーが無効なstateパラメータを返却しました。」と表示される  
 間違ってcallback.phpにアクセスすると発生します。最初にアクセスするURLはindex.phpです。
 
 ## その他
