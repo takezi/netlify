@@ -37,13 +37,13 @@ LINEログイン v2.1を使ったログインとメッセージ送信のPHPサ�
 
 ## 環境変数の設定
 
-.htaccess（またはhttpd.confなど）で以下の環境変数を設定します。
+.htaccess（またはhttpd.confなど）に、以下の値をLINE Developersコンソールで確認して設定します。
 
 | 変数名 | 値
 | --- | ---
 | LINE_LOGIN_CHANNEL_ID | LINEログインのチャネルID
 | LINE_LOGIN_CHANNEL_SECRET | LINEログインのチャネルシークレット
-| LINE_LOGIN_CALLBACK_URL | callback.phpへのURLを指定（詳細は別途説明します）
+| LINE_LOGIN_CALLBACK_URL | callback.phpへのURLを指定（詳細は次の節で説明します）
 | LINE_MESSAGE_CHANNEL_ACCESS_TOKEN | Messaging APIのチャネルアクセストークン（長期）
 
 設定例
@@ -71,7 +71,7 @@ SetEnv LINE_MESSAGE_CHANNEL_ACCESS_TOKEN lUEdqPlxca9cJzhsJf4PLb0aonuxWZIsjUrUocC
     Forwarding                    http://4c09b0b9afc6.ngrok.io -> http://localhost:80
     Forwarding                    https://4c09b0b9afc6.ngrok.io -> http://localhost:80
     ```
-    ※URLはngrokを起動し直す度に変化するので、その度にコピーし直す必要があります。
+    ※URLはngrokを起動し直す度に変化するため、その度にコピーし直す必要があります。
 1. コールバックURLの作成  
     ngrokのhttpsのURLに「/line-login/callback.php」を加えたものになります。  
     例）https://4c09b0b9afc6.ngrok.io/line-login/callback.php
@@ -83,7 +83,7 @@ SetEnv LINE_MESSAGE_CHANNEL_ACCESS_TOKEN lUEdqPlxca9cJzhsJf4PLb0aonuxWZIsjUrUocC
 
 1. ngrokのhttpsのURLに「/line-login/index.php」を加えたものにアクセス
 1. LINEにログイン  
-    ※index.phpのURLをLINEで送って、LINE上のブラウザで開いた場合はこのステップは省略されます。またPCでも既にログイン済みなら省略されます。
+    ※URLをLINEで送って、LINE上のブラウザで開いた場合はこのステップは省略されます。またPCでも既にログイン済みなら省略されます。
 1. 「許可する」ボタンを押してアクセスを許可する
 1. ユーザーIDと名前を確認できる画面が表示される  
     メッセージ入力欄と送信ボタンで任意のメッセージを送ることを試せます。
