@@ -11,14 +11,14 @@ LINEでSSOするには、処理の一部をLIFFという別のフレームワー
 1. LINE Developersコンソールでチャネルを作成  
 https://developers.line.biz/ja/docs/messaging-api/getting-started/  
 ※「1. LINE Developersコンソールにログインする」から「5. チャネルを確認する」までを実施します。
-1. 長期のチャネルアクセストークンを発行
+1. 長期のチャネルアクセストークンを発行  
 ※LINE Developersコンソールの［チャネル設定］タブでMessaging APIチャネルを選択して、［Messaging API設定］タブで発行できます。
 1. LINEログインのチャネルを作成  
 https://developers.line.biz/ja/docs/line-login/getting-started/#step-1-deploy-starter-app  
 ※「Step 2: LINEログインのチャネルを作成する」のみを実施します。
 アプリタイプは「ウェブアプリ」を選択します。
 1. サンプルコードをローカルに配置  
-※以降、htdocsの下にline-loginという名前でクローンした前提で説明します。
+※以降、ローカルではapacheを利用し、htdocsの下にline-loginという名前でクローンした前提で説明します。
 1. ngrokをインストール  
 ローカルで確認を使うために使用します。レンタルサーバーなど本番環境では不要です。
     - Macの場合はbrewでインストールするのが簡単
