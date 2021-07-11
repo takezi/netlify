@@ -54,7 +54,7 @@ SetEnv LINE_MESSAGE_CHANNEL_ACCESS_TOKEN lUEdqPlxca9cJzhsJf4PLb0aonuxWZIsjUrUocC
     ```
     ngrok http 80
     ```
-    起動すると以下のように表示され、以下の例だと「https://ad336e08f4cd.ngrok.io」の部分を控えます。
+    起動すると以下のように表示され、以下の例だと `https://ad336e08f4cd.ngrok.io` の部分を控えます。
     ```
     ngrok by @inconshreveable                                         (Ctrl+C to quit)
     Session Status                online
@@ -76,9 +76,9 @@ ngrokのhttpsのURLに「/line-login/callback.php」を加えたものになり�
 ## 動作確認
 
 1. ngrokのhttpsのURLに「/line-login/index.php」を加えたものにアクセス
-1. LINEにログイン
+1. LINEにログイン  
 ※index.phpのURLをLINEで送って、LINE上のブラウザで開いた場合はこのステップは省略されます。またPCでも既にログイン済みなら省略されます。
-1. 「許可する」ボタンを押して公式アカウントへのアクセスを許可する
+1. 「許可する」ボタンを押してアクセスを許可する
 1. ユーザーIDと名前を確認できる画面が表示される  
 メッセージ入力欄と送信ボタンで任意のメッセージを送ることを試せます。
 
@@ -95,8 +95,8 @@ ngrokのURLは起動する度に変化します。
 ## その他
 
 - 公式アカウントの設定
-LINE DevelopersコンソールでMessaging APIチャネルを作成すると、自動的に公式アカウントが作成されます。  
-公式アカウントの各種設定は [LINE Official Account Manager](https://manager.line.biz) から行います。  
+LINE DevelopersコンソールでMessaging APIチャネルを作成すると、自動的に公式アカウントが作成されます。
+公式アカウントの各種設定は [LINE Official Account Manager](https://manager.line.biz) から行います。
 例えば、以下のような設定を行うことも出来ます。
     - QRコードで友達登録したらindex.phpへのURLをチャットで送る
     - リッチメニューでindex.phpに飛べるようにする  
