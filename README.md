@@ -4,7 +4,16 @@
 
 LINEログイン v2.1を使ったSSOとメッセージ送信のサンプルコードです。
 
-## 準備
+## ファイル一覧
+
+| ファイル名 | 説明
+| --- | ---
+| index.php | ログインしていなければ、LINEログインの処理を開始。<br />ログインできていればセッションからユーザー情報を表示
+| callback.php | OAuth/OpenID ConnectのコールバックURLとして使用。<br />アクセストークンの発行やIDトークンの取得を行い、ログインに成功したらセッションを作成する。
+| send.php | Messaging APIを利用してログインユーザーにメッセージを送るサンプルコード。
+| .htaccess | 環境に依存する情報を、環境変数を設定するために使用。
+
+## 事前準備
 
 1. LINE Developersコンソールでチャネルを作成  
     https://developers.line.biz/ja/docs/messaging-api/getting-started/  
