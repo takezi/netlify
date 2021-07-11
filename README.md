@@ -90,7 +90,7 @@ SetEnv LINE_MESSAGE_CHANNEL_ACCESS_TOKEN lUEdqPlxca9cJzhsJf4PLb0aonuxWZIsjUrUocC
 
 ## うまく動かない場合
 
-- 「400 Bad Request Invalid redirect_uri value. Check if it is registered in a LINE developers site.」と表示される  
+- 「400 Bad」(Request Invalid redirect_uri value. Check if it is registered in a LINE developers site.) と表示される  
     コールバックURLの設定が間違っています。
     ngrokのURLは起動する度に変化します。
     起動する度に、`.htaccess` と LINE DevelopersコンソールでコールバックURLを再設定する必要があります。  
@@ -108,7 +108,7 @@ SetEnv LINE_MESSAGE_CHANNEL_ACCESS_TOKEN lUEdqPlxca9cJzhsJf4PLb0aonuxWZIsjUrUocC
     - リッチメニューでindex.phpに飛べるようにする  
 - ユーザーIDが使える範囲  
     ユーザーIDは、LINE Developersコンソールで最初に作成したプロバイダの単位でユニークです。  
-    プロバイダが異なると同じユーザーでも異なるIDが割り振られています。
+    プロバイダが異なると同じユーザーでも異なるIDが割り振られます。
 - LIFFについて  
     LINEログインを利用するには、LIFFというjsフレームワークを利用する方法もあります。
     | 方法 | 特徴 | 向いている使い方
