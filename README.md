@@ -29,11 +29,11 @@ LINEログイン v2.1を使ったログインとメッセージ送信のPHPサ�
     ローカルで確認を使うために使用します。レンタルサーバーなど本番環境では不要です。
     - Macの場合はbrewでインストールするのが簡単
         ```
-        brew install nogrok
+        brew install ngrok
         ````
     - WindowsまたはMacでbrewが使えない場合  
-    https://ngrok.com/download  
-    からダウンロードして任意の場所に解凍します。
+        https://ngrok.com/download  
+        からダウンロードして任意の場所に解凍します。
 
 ## 環境変数の設定
 
@@ -54,7 +54,7 @@ SetEnv LINE_LOGIN_CHANNEL_SECRET c2663b9c8dc9327e63088e6bfe436f25
 SetEnv LINE_MESSAGE_CHANNEL_ACCESS_TOKEN lUEdqPlxca9cJzhsJf4PLb0aonuxWZIsjUrUocCt+Oco2RqhFr1/1GkprxCDZ1zi1iYNZlFY8IRx58ZmV6Zhqk8+80f+xjp7WRZRqZiCfdl8RMgqKR1Nv/JWVFzOxiSNYHDdDRbN75LRMCvWL8AAzwdB04t89/1O/w1cDnyilFU=
 ```
 
-## nogrokの起動とコールバックURL設定
+## ngrokの起動とコールバックURL設定
 
 1. ngrokを起動してhttpsのURLを控える
     ```
