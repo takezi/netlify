@@ -1,8 +1,8 @@
-# LINEログイン v2.1を使ったSSO(PKCEも対応)
+# LINEログイン v2.1を使ったログイン(PKCEも対応)
 
 ## 概要
 
-LINEログイン v2.1を使ったSSOとメッセージ送信のサンプルコードです。
+LINEログイン v2.1を使ったログインとメッセージ送信のPHPサンプルコードです。
 
 ## ファイル一覧
 
@@ -42,8 +42,8 @@ LINEログイン v2.1を使ったSSOとメッセージ送信のサンプルコ�
 | 変数名 | 値
 | --- | ---
 | LINE_LOGIN_CHANNEL_ID | LINEログインのチャネルID
+| LINE_LOGIN_CHANNEL_SECRET | LINEログインのチャネルシークレット
 | LINE_LOGIN_CALLBACK_URL | callback.phpへのURLを指定（詳細は別途説明します）
-| LINE_LOGIN_CHANNEL_SECRET | LINEログインのチャネルシークレット 
 | LINE_MESSAGE_CHANNEL_ACCESS_TOKEN | Messaging APIのチャネルアクセストークン（長期）
 
 設定例
@@ -110,7 +110,7 @@ SetEnv LINE_MESSAGE_CHANNEL_ACCESS_TOKEN lUEdqPlxca9cJzhsJf4PLb0aonuxWZIsjUrUocC
     ユーザーIDは、LINE Developersコンソールで最初に作成したプロバイダの単位でユニークです。  
     プロバイダが異なると同じユーザーでも異なるIDが割り振られています。
 - LIFFについて  
-    LINEでSSOするには、LIFFというjsフレームワークを利用する方法もあります。
+    LINEログインを利用するには、LIFFというjsフレームワークを利用する方法もあります。
     | 方法 | 特徴 | 向いている使い方
     | --- | --- | ---
     | LIFF | jsで作られたLINEのフロントエンドフレームワーク | 主にフロントエンドで処理する場合
