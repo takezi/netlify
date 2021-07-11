@@ -100,9 +100,9 @@ SetEnv LINE_MESSAGE_CHANNEL_ACCESS_TOKEN lUEdqPlxca9cJzhsJf4PLb0aonuxWZIsjUrUocC
 
 ## その他
 
-- 公式アカウントの設定
-    LINE DevelopersコンソールでMessaging APIチャネルを作成すると、自動的に公式アカウントが作成されます。
-    公式アカウントの各種設定は [LINE Official Account Manager](https://manager.line.biz) から行います。
+- LINE公式アカウントの設定
+    LINE DevelopersコンソールでMessaging APIチャネルを作成すると、自動的にLINE公式アカウントが作成されます。
+    LINE公式アカウントの各種設定は [LINE Official Account Manager](https://manager.line.biz) から行います。
     例えば、以下のような設定を行うことも出来ます。
     - QRコードで友達登録したらindex.phpへのURLをチャットで送る
     - リッチメニューでindex.phpに飛べるようにする  
